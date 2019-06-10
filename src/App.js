@@ -20,10 +20,17 @@ import LifecycleA from './components/LifecycleA';
 import FragmentDemo from './components/FragmentDemo';
 import Table from './components/Table';
 import ParentComp from './components/ParentComp';
+import RefsDemo from './components/RefsDemo';
+import FocusInput from './components/FocusInput';
+import FRParentInput from './components/FRParentInput';
 
 function App() {
+  console.log(window)
   return (
     <div className="App">
+        <FRParentInput/>
+        <FocusInput/>
+        <RefsDemo/>
         <Form/>
         <h1 className='error'>Error</h1>
         <h1 className={styles.sucess}>Success</h1>
